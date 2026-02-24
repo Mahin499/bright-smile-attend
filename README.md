@@ -92,3 +92,23 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Python Facial Recognition Tool
+This repository also includes a Python facial attendance model in `tools/facial_attendance/` with a root launcher `facerecognition.py`.
+
+### Python prerequisites
+- Python 3.10+
+- A working webcam
+
+### Install Python dependencies
+```bash
+python -m pip install -r tools/facial_attendance/requirements.txt
+```
+
+If your environment blocks package downloads, run the same command on a machine with internet access.
+
+### Run
+```bash
+python facerecognition.py --known-faces-dir known_faces --output attendance.csv
+```
+
